@@ -1,0 +1,43 @@
+/*все элементы div с аттрибутом id*/
+div[id]
+{
+    color: red;
+}
+
+/*все элементы со значениями в аттрибуте (в данном случае class= myclass и mysuperclass*/
+div[class="myclass mysuperclass"]
+{
+    text-decoration: underline;
+}
+
+div[id][class="myclass"]
+{
+    border: 4px dashed #000;
+}
+
+/*применяется ко всем, где есть аттрибут myclass  в параметре class*/
+div[id][class~="myclass"]
+{
+    background: yellow;
+}
+
+/*
+E[foo^="bar"] - начало
+E[foo$="bar"] - конец
+*/
+
+/* элдемент содержит*/
+div[title*="ест"]
+{
+    font-style: italic;
+}
+div[title*="uck"]
+{
+    font-size: 48px;
+}
+
+input[name="text2"]
+{
+    border:3px solid #ff0000;
+}
+
