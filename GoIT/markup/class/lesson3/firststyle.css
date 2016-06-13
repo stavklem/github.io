@@ -1,0 +1,22 @@
+p {
+    color:fuchsia;
+    font-size: 25px;
+}
+/*
+комментарий
+*/
+h1 {
+    color:coral;
+    font-size: 29px;
+}
+
+#super{
+       color: navy;
+}
+
+.success{
+    color:darkorange;
+}
+.big{
+    font-size: 36px;
+}
