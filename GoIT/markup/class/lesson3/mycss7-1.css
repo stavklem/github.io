@@ -1,0 +1,28 @@
+p:first-line,
+span:first-line /*не работает у строковых ждементов*/
+{
+    font-size: 300%;
+}
+
+p:first-letter, 
+span:first-letter
+{
+    color: red;
+}
+
+span
+{
+    display: inline-block;
+}
+
+.i:before
+{
+    content: 'before ';
+    color: blue;
+}
+
+.i:after
+{
+    content: ' after';
+    color: red;
+}

@@ -1,0 +1,16 @@
+input + label
+{
+    color: green;
+}
+
+input:checked + label
+{
+    color:blue;
+}
+
+/*нуно прописать элементу  disabled="disabled" */
+input:disabled + label
+{
+    color: #cccccc;
+}
+

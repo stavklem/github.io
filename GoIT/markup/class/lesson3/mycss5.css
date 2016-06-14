@@ -1,0 +1,57 @@
+/*самый распространенный - все потомки*/
+.parent .child
+{
+    aborder: 1px solid red;
+}
+
+/*все селекторы можно уточнять именами элементов (ol.parent li.child)*/
+ol.parent li.child
+{
+    aborder: 1px solid red;
+}
+
+/*только child*/
+.parent > .child
+{
+    aborder: 1px solid red;
+}
+
+/*только следующий за*/
+.child04 + .child
+{
+    aborder: 1px solid red;
+}
+
+/*все следующие после*/
+.child01 ~ .child
+{
+    aborder: 1px solid red;
+}
+
+/*
+E:nth-child(an+b)     разбивает все Е-элементы на а-групп (остаток в последней)
+выделяет b-элемент в каждой
+---------
+E:nth-last-child(an+b)  тоже самое, но с конца коллекции элементов
+
+могут принимать значения odd (2n+1)- нечетные  и even (2n) - четные
+n- счетчик, автоматически принимающий значения 0,1,2,...
+b - означает элемент, с которого начнется счет., например -
+
+*/
+
+.parent > li:nth-child(odd)
+{
+    aborder: 1px solid red;
+}
+
+.parent > li:nth-child(8)
+{
+    aborder: 1px solid red;
+}
+
+.parent > li:nth-child(3n+1)
+{
+    border: 1px solid red;
+}
+

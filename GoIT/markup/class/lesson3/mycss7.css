@@ -1,0 +1,39 @@
+/*любые стили для :visited отключены по соображениям безопасности*/
+
+
+
+:visited
+{
+    /*разрешается менять только color*/
+    color:red;
+}
+
+
+:link
+{
+    color: green;
+}
+
+:link:hover /*при наведнии на ссылку*/
+    /*:visited:hover*/
+{
+    /*если определить hover без уточнения, то он сработает вообще на всех жлемнет
+
+    :link матчится на все непосещенные ссылки
+
+    :visited только на посещенные и перестает обрабатывать правила :hover */
+
+    color:black;
+    text-decoration: none;
+}
+
+:link:active,
+:link:focus
+{
+    /*
+        :visited:active,
+        :visited:focus
+    */
+    background:red;
+    color: white;
+}
