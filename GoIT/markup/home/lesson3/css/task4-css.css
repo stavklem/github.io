@@ -1,0 +1,26 @@
+a[href*="http"]
+{
+    color: #f70;
+}
+
+a[href*="google"]
+{
+    color: #666;
+}
+
+a[target]:after
+{
+    display: inline-block;
+    content: "⇱";
+    text-decoration: none;
+    transform: scale(-1,1) ;
+}
+/*a:visited[href*="http"]
+{
+    color: #f70;
+}*/
+/*a:visited[href*="google"]
+{
+    color: #666;
+}
+*/
