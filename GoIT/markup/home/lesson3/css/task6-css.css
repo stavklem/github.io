@@ -1,0 +1,39 @@
+label{
+    text-decoration: underline;
+}
+
+label[for="red"]
+{
+    color: red;
+}
+
+label[for="blue"]
+{
+    color: blue;
+}
+
+label[for="green"]
+{
+    color: green;
+}
+
+input:checked label
+{
+    color: lightpink;
+}
+
+.red
+{
+    background: red;
+    color :white;
+}
+
+.blue {
+    background: blue;
+    color:white; }
+
+.green {
+    background: green;
+    color:white; }
+
+#green:checked
